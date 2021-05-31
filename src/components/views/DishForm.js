@@ -120,7 +120,6 @@ DishForm = reduxForm({
 const selector = formValueSelector('dish')
 DishForm = connect(state => {
   const type = selector(state, 'type')
-
   return {
     type
   }
