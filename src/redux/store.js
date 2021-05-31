@@ -6,7 +6,8 @@ const initialState = {
   preparation_time: "",
   type: "pizza",
   no_of_slices: 2,
-  diameter: 15
+  diameter: 15,
+  spiciness_scale: 1
 }
 
 const reducers = combineReducers({

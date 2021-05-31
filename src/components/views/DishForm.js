@@ -52,7 +52,7 @@ class DishForm extends React.Component {
         </div>
         <div>
           <Field required placeholder="dish type" name="type" component="select" defaultValue="pizza" onChange={() => handleChange}>
-            <option>-</option>
+            <option>select dish type</option>
             <option value="pizza">pizza</option>
             <option value="soup">soup</option>
             <option value="sandwich">sandwich</option>
@@ -113,13 +113,14 @@ DishForm = reduxForm({
     preparation_time: "00:00:00",
     no_of_slices: 2,
     diameter: 15,
+    spiciness_scale: 1,
   }
 })(DishForm)
 
 const selector = formValueSelector('dish')
 DishForm = connect(state => {
   // const name = selector(state, 'name')
-  // const preparation_time = selector(state, 'preparation_time')
+  // const preparation_time = selector(state, 'preparation_time')nod
   const type = selector(state, 'type')
 
   //pizza props
