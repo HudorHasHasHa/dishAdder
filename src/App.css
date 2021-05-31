@@ -12,6 +12,25 @@ form {
   text-align: left;
 }
 
+form div{
+  width: 40%;
+} 
+
+.spiceness label{
+  border-bottom: 1px solid black;
+}
+
+div button[type=submit] {
+  white-space: nowrap;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 4px 15px;
+  font-size: 20px;
+  color: #fff;
+  background-image: linear-gradient(#4f93ce,#285f8f);
+  border: 1px solid #285f8f;
+}
+
 input,select {
   padding: 0;
   text-align: center;
@@ -40,3 +59,4 @@ label{
   margin: 14px 0;
   outline: 0;
 }
+
