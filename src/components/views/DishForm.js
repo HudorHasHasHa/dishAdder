@@ -119,19 +119,7 @@ DishForm = reduxForm({
 
 const selector = formValueSelector('dish')
 DishForm = connect(state => {
-  // const name = selector(state, 'name')
-  // const preparation_time = selector(state, 'preparation_time')nod
   const type = selector(state, 'type')
-
-  //pizza props
-  // const no_of_slices = selector(state, 'no_of_slices')
-  // const diameter = selector(state, 'diameter')
-
-  //soup props
-  // const spiciness_scale = selector(state, 'spiciness_scale')
-
-  //sandwich props
-  // const slices_of_bread = selector(state, 'slices_of_bread')
 
   return {
     type
